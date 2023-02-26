@@ -1,0 +1,240 @@
+/* Reset Css */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 1500px;
+}
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ul {
+    list-style: none;
+}
+.clear {
+    clear: both;
+}
+#apps {
+
+}
+#header {
+    background-color: #000;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Làm cho thẻ Header nỗi lên trên thẻ slider*/
+}
+#nav {
+    display: inline-block;
+    
+}
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+#nav > ul > li > a {
+    text-transform: uppercase;
+}
+#nav li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav li:hover > a{
+    color: #000;
+    background-color: #cccccc;   
+}
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+#nav .subnav a {
+    color: black;
+}
+#nav .subnav li {
+    display: block;
+}
+#header .search-btn {
+    float: right;
+    line-height: 46px;
+    padding: 0 23px;
+    cursor: pointer;
+}
+#header .search-btn:hover {
+    background-color: #F44336;
+}
+#header .search-btn i {
+    color: #fff;
+}
+#slider {
+    margin-top: 46px;
+    position: relative;
+}
+#slider .content {
+    display: none;
+    width: 100%;
+    position: relative;
+}
+#slider .text-heading {
+    margin: 20px;
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 48px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.mySlides {
+    width: 100%;
+    height: 50%;
+}
+
+#content {
+    padding: 64px 0;
+}
+#content .content-section {
+    width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#content .section-heading {
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 5px; /* Khoảng cách giữa các chữ */
+}
+#content .section-sub-heading {
+    margin: 15px 0;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6; /* Làm mò chữ */
+
+}
+#content .about-text {
+    text-align: justify;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+#content .member-list {
+    width: 800px;
+    padding: 32px 0 96px 0;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .member-item {
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+#content .member-name {
+    
+    padding: 15px 0;
+}
+
+#content .member-img {
+    width: 60%;
+    border-radius: 4px;
+}
+#content .container-content{
+    background-color: #000;
+    color: #fff;
+}
+/* Tour Dates */
+
+.container-tour {
+    background-color: #000;
+    color: #fff;
+    padding: 64px 16px;
+
+}
+.text-list {
+    background-color: #fff;
+    color: #757575;
+}
+.text-list li {
+    border-bottom: 1px solid #ddd;
+    height: 40px;
+    text-align: left;
+    padding: 10px;
+}
+.text-list li span {
+    background-color: #F44336;
+    margin-left: 16px;
+    padding: 0 8px;
+    color: #fff;
+}
+
+.history-tour {
+ margin: 32px -8px -8px;
+ padding-bottom: 32px;
+
+}
+.history-list {
+    float: left;
+    width: 33.333333%;
+}
+.history-img {
+    width: 100%;
+    padding: 0 8px;
+    display: block;
+}
+.history-img:hover {
+    opacity: 0.6;
+}
+
+.history-item {
+    background-color: #fff;
+    color: #000;
+    margin: 0 8px 32px 8px;
+    padding-left: 15px;
+    line-height: 1.4;
+    padding-top: 15px;
+    text-align: left;
+
+}
+.history-heading {
+    margin: 15px 0;
+    font-weight: 600;
+}
+.history-time {
+    margin: 15px 0;
+    color: #757575;
+}
+.history-content {
+    margin: 15px 0;
+}
+.history-buy-btn {
+    margin: 15px 0;
+    padding: 12px 20px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+.history-buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    font-weight: 700;
+}
